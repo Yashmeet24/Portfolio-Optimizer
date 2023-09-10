@@ -13,7 +13,7 @@ print(df.head())
 json_records = df.to_dict(orient="records")
 
 # Specify the output JSON file
-output_file = "../../../companies.json"
+output_file = "../../../frontend/src/companies.json"
 
 # Write the list of JSON records to the output file
 with open(output_file, "w") as f:

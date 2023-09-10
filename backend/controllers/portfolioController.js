@@ -3,6 +3,7 @@ const { spawn } = require("child_process");
 const portfolioController = async (req,res) => {
     const args = req.body.tickers;
     const option = req.body.option;
+    console.log(args)
     if(option>3 || option<1) res.status(200).json({mssg:"Please Select a option : 1.Minimum Volatility Portfolio 2.Max Return Portfolio 3.Optimal Portfolio"})
     var output="";
     const childPython = spawn("python" , ["./controllers/calculations/calculation.py",...args])
@@ -19,9 +20,9 @@ const portfolioController = async (req,res) => {
             const minVolPort = JSON.parse(lines[0]);
             const maxRetPort = JSON.parse(lines[1]);
             const optimalPort = JSON.parse(lines[2]);
-            console.log('Minimum Volatility Portfolio:', minVolPort);
-    console.log('Maximum Return Portfolio:', maxRetPort);
-    console.log('Optimal Portfolio Based on Sharpe Ratio:', optimalPort);
+            // console.log('Minimum Volatility Portfolio:', minVolPort);
+    // console.log('Maximum Return Portfolio:', maxRetPort);
+    // console.log('Optimal Portfolio Based on Sharpe Ratio:', optimalPort);
     if(option===1) output=minVolPort
     else if (option===2) output=maxRetPort
     else output=optimalPort
