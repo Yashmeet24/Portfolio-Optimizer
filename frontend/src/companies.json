@@ -1,0 +1,42 @@
+[
+    {
+        "value" : "AAPL",
+        "label" : "Apple Inc."
+    },
+    {
+        "value" : "GOOGL",
+        "label" : "Alphabet Inc."
+    },
+    {
+        "value" : "MSFT",
+        "label" : "Microsoft Corporation"
+    },
+    {
+        "value" : "AMZN",
+        "label" : "Amazon.com, Inc."
+    },
+    {
+        "value" : "META",
+        "label" : "Meta"
+    },
+    {
+        "value" : "TSLA",
+        "label" : "Tesla Motors"
+    },
+    {
+        "value" : "GS",
+        "label" : "The Goldman Sachs Group, Inc."
+    },
+    {
+        "value" : "DJIA",
+        "label" : "The Dow Jones Industrial Average "
+    },
+    {
+        "value" : "SPX",
+        "label" : "The S&P 500 Index"
+    },
+    {
+        "value" : "COMP",
+        "label" : "The NASDAQ Composite Index"
+    }
+]
